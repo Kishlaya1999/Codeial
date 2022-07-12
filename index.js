@@ -6,9 +6,9 @@ const port = 8000;
 // Middleware to acess the routes/index.js by default index.js is loaded so we can write ./routes only
 app.use('/',require('./routes'));
 
-app.get('/',function(req,res){
-     res.send('<h1>Welcome</h1>');
-})
+// app.get('/',function(req,res){
+//      res.send('<h1>Welcome</h1>');
+// })
 
 app.listen(port, function(err){
      if(err){

@@ -5,10 +5,12 @@ const router = express.Router();
 // impporting the controller file so that we can specify it with the routes
 const homeController = require('../controllers/home_controller');
 
+
 // Specifing the routes 
 
 // Action for ./ route is defined in controller/homeController 
-router.get('./',homeController.home)
+router.get('/',homeController.home);
+router.use('/users',require('./users'));
 
 
 
