@@ -3,10 +3,14 @@ const app = express();
 const port = 8000;
 const expressLayouts = require('express-ejs-layouts');
 
-
+// telling the middleware that where to look for assets
 app.use(express.static('./assets'));
 
 app.use(expressLayouts);
+// extract style and scripts form sub pages and insert in head of layouts.css
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+
 
 // Use express router
 // Middleware to acess the routes/index.js by default index.js is loaded so we can write ./routes only
