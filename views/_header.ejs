@@ -1,5 +1,27 @@
 <!-- Partials are the code which are being repeated in all the pages, so we make a seperate file for it and include it in pages we want -->
 <header>
      Page Header
+
+     <ul>
+          <% if(locals.user) { %>
+
+               <li>
+                    <a href="/users/profile"><%= user.name%></a>
+               </li>
+               <li>
+                    <a href="/users/signOut">Sign Out</a>
+               </li>
+
+          <% } else { %>
+
+               <li>
+                    <a href="/users/signIn">Sign In</a>
+               </li>
+               <li>
+                    <a href="/users/signUp">Sign Up</a>
+               </li>
+
+          <% } %>
+     </ul>
 </header>
 
