@@ -40,6 +40,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(passport.setAuthenticatedUser);
+
 // Use express router
 // Middleware to acess the routes/index.js by default index.js is loaded so we can write ./routes only
 app.use('/',require('./routes'));
