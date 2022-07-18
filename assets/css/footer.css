@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+.footer {
+  background-color: #7f7f7f;
+  height: 9.5%;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; }
+  .footer span {
+    color: #fff;
+    padding: 0 0 0 20px; }
+  .footer ul {
+    list-style-type: none; }
+    .footer ul li {
+      margin: 5px; }
+      .footer ul li a {
+        text-decoration: none;
+        color: #fff; }
